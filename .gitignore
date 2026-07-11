@@ -1,0 +1,42 @@
+# Virtual Environments
+venv/
+paddle_env/
+florence_env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Generated Indexes
+index.pkl
+image_index.pkl
+video_index.pkl
+audio_index.pkl
+
+# Local Data
+data/
+test_images/
+
+# IDE
+.vscode/
+.idea/
+
+# HuggingFace Cache
+.cache/
+
+credentials/
+.env
+.env.*
+token.json
+client_secret.json
+google_photos_token.json
+github_oauth.json
+
+# Temporary indexing/output
+temp/
+temp_frames/
+log.txt
+
+# Optional temp files
+*.tmp
+*.temp
