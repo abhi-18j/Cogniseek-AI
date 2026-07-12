@@ -1125,22 +1125,14 @@ export default function PageDashboard({
                             </div>
 
                             {/* Metadata segment */}
-                            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-[10px] text-slate-400 dark:text-slate-500 font-medium">
+                            {/* Metadata segment */}
+                            <div className="flex flex-wrap items-center mt-3 pt-3 border-t border-slate-100 dark:border-slate-800">
                               {platformObj && (
-                                <span className="inline-flex items-center gap-1 bg-slate-100 dark:bg-slate-850 text-slate-600 dark:text-slate-350 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                                <span className="inline-flex items-center gap-1 bg-slate-100 dark:bg-slate-850 text-slate-600 dark:text-slate-350 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider text-[10px]">
                                   {renderPlatformLogo(platformObj.iconName, platformObj.color, "w-2.5 h-2.5")}
                                   {platformObj.name}
                                 </span>
                               )}
-
-                              <span>&bull;</span>
-                              <span>Size: <strong className="font-mono text-slate-700 dark:text-slate-300">{file.size}</strong></span>
-                              <span>&bull;</span>
-                              <span>Last Modified: <strong className="font-mono text-slate-700 dark:text-slate-300">{file.modifiedDate}</strong></span>
-                              <span>&bull;</span>
-                              <span className="inline-flex items-center gap-1 bg-blue-50/85 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 border border-blue-100/30 dark:border-blue-900/30 px-2 py-0.5 rounded-full font-bold">
-                                Relevance: {file.file.toLowerCase().includes(query.toLowerCase()) ? "98%" : "84%"}
-                              </span>
                             </div>
 
                             {/* Actions segment */}
